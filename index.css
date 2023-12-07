@@ -490,6 +490,7 @@ select{
     }
     .client-text{
         margin:0 ;
+        text-align: center;
     }
     .contact{
         display: flex;
