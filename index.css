@@ -24,7 +24,7 @@
 }
 .nav-bar .logo h2 a{
     text-decoration:none;
-    color:#000;
+    color:#fff;
 }
 .nav-links{
     font-size: 1em;
@@ -52,7 +52,7 @@ a .fa-bars{
     display:none;
 }
 .nav-links li a{
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 #special-nav-btn li{
