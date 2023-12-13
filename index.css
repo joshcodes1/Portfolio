@@ -398,9 +398,17 @@ select{
 .fa-facebook{
     font-size: 30px;
 }
+.fa-linkedin{
+    font-size: 30px;
+    margin-left: 20px; 
+}
 .fa-github{
     font-size: 30px;
     margin-left: 20px;
+}
+.fa-envelope{
+    font-size: 30px;
+    margin-left: 20px; 
 }
 .fa-whatsapp{
     font-size: 30px;
