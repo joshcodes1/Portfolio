@@ -261,7 +261,7 @@ hr{
     float: left;
     width: 40%;
     margin-left: 6.5%;
-    border: 5px solid #080808;
+    box-shadow: 2px 2px 2px 2px  rgb(46, 45, 45);
     margin-top:15px ;
     margin-bottom:15px ;
     border-radius: 10px;
