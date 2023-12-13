@@ -19,7 +19,7 @@
 }
 .logo{
     font-size: 1em;
-    color:rgb(95, 8, 95);
+    color: purple;
 }
 .nav-bar .logo h2{
     text-transform: uppercase;
@@ -27,7 +27,8 @@
 }
 .nav-bar .logo h2 a{
     text-decoration:none;
-    color:6C82EF;
+    color: purple;
+
 }
 .nav-links{
     font-size: 1em;
@@ -59,11 +60,11 @@ a .fa-bars{
     text-decoration: none;
 }
 #special-nav-btn li{
-    color:#080808;
+    color:#fff;
 }
 
 #special-nav-btn{
-    border: 1px solid #000 ;
+    background: purple;
     text-decoration: none;
     padding: 2px 3px;
 }
@@ -80,6 +81,8 @@ a .fa-bars{
 }
 .fa-location-dot{
     margin-right: 5px;
+    color: purple;
+
 }
 legend{
     font-size: 18px;
@@ -215,21 +218,25 @@ legend{
     text-transform: uppercase;
     font-weight: 100;
     padding-left: 10px;
+    color: purple;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .fa-desktop{
     font-size: 30px;
-    color: purple;
+    color: #fff;
+
     
 }
 .fa-palette{
     font-size: 30px;
-    color: purple;
+    color: #fff;
+
     
 }             
 .fa-gear{
     font-size: 30px;
-    color: purple;
+    color: #fff;
+
     
 }
 hr{
@@ -250,6 +257,7 @@ hr{
 }
 .work{
     padding: 10px;
+    position: relative;
     float: left;
     width: 40%;
     margin-left: 6.5%;
@@ -258,21 +266,42 @@ hr{
     margin-bottom:15px ;
     border-radius: 10px;
 }
-.work button{
-    position: absolute;
-    align-items: center;
-    inset: 50px 0 50px 0;
+.work h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
 }
-#see-btn{
-    display: block;
-    margin: 30px auto;
-    padding: 10px 15px;
-    background:transparent;
-    border: 2px solid #fff;
+.work h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.veiw{
+    background-color: #fff;
+    position: absolute;
+    border: none;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px  rgb(46, 45, 45);
+}
+#github-link{
+    position: relative;
+    padding-top: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    bottom: 0;
+    border: none;
+}
+.fa-github{
     color: #fff;
-    ;
+
 }
 /* my work end */
+
 /* end of third section */
 
 
@@ -281,7 +310,6 @@ hr{
     padding: 30px 20px;
     margin: 0 -20px;
     color: #fff;
-
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -321,7 +349,7 @@ textarea::placeholder {
    font-size: 15px;
 }
 #send-btn{
-   background: white; 
+   background: purple;
    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    font-size: 17px;
    color: #fff;
@@ -339,6 +367,7 @@ select{
     width: 100%;
     position:relative;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* display: none; */
 }
 .contact-text h3{
     font-size: 17px;
@@ -391,6 +420,7 @@ select{
     text-transform: capitalize;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 /* end of fifth section */
 
 
@@ -398,9 +428,11 @@ select{
 
 
 /* mobile veiw start */
+
 @media only screen and (max-width:600px){
     .nav-bar .fa-bars{
         display: block;
+        color: #fff;
         font-size: 35px;
     }
     #opn-btn{
