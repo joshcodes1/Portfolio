@@ -1,476 +1,447 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Afacad';
+  box-sizing: border-box;
 }
-.container{
-    background-color: #131212;  
-    color: #fff;
+.container {
+  background-color: #131212;
+  color: #fff;
 }
 
 /* start of first section */
 
-.nav-bar{
-    padding: 20px 20px 0 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    justify-content: space-between;
-    display: flex;
-    margin-bottom: 40px;
+.nav-bar {
+  padding: 20px 20px 0 20px;
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 40px;
 }
-.logo{
-    font-size: 1em;
-    color: purple;
+.logo {
+  font-size: 1em;
+  color: purple;
 }
-.nav-bar .logo h2{
-    text-transform: uppercase;
-    font-size: 20px;
+.nav-bar .logo h2 {
+  text-transform: uppercase;
+  font-size: 20px;
 }
-.nav-bar .logo h2 a{
-    text-decoration:none;
-    color: purple;
-
+.nav-bar .logo h2 a {
+  text-decoration: none;
+  color: purple;
 }
-.nav-links{
-    font-size: 1em;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: flex;
-    justify-content: space-between;
+.nav-links {
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between;
 }
-.nav-links li{
-    list-style: none;
-    font-size: 17px;
-    font-weight: 500;
-    margin: 0 20px;
-    color:white;
+.nav-links li {
+  list-style: none;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 20px;
+  color: white;
 }
-a .fa-bars{
-    display: none;
+a .fa-bars {
+  display: none;
 }
- a .fa-xmark{
-    display: none;
+a .fa-xmark {
+  display: none;
 }
-#opn-btn{
-    display: none;
+#opn-btn {
+  display: none;
 }
-#x-btn{
-    display:none;
+#x-btn {
+  display: none;
 }
-.nav-links li a{
-    color: #fff;
-    text-decoration: none;
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
 }
-#special-nav-btn li{
-    color:#fff;
+#special-nav-btn li {
+  color: #fff;
 }
 
-#special-nav-btn{
-    background: purple;
-    text-decoration: none;
-    padding: 2px 3px;
+#special-nav-btn {
+  background: purple;
+  text-decoration: none;
+  padding: 2px 3px;
 }
-.main-div{
-    padding: 20px 20px 0 20px; 
+.main-div {
+  padding: 20px 20px 0 20px;
 }
-.location{
-    align-items: center;
-    display:flex;
-    margin-bottom:20px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-    color: #fff;
+.location {
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.fa-location-dot {
+  margin-right: 5px;
+  color: purple;
+}
+legend {
+  font-size: 18px;
+  color: #fff;
 
+  font-weight: 400;
 }
-.fa-location-dot{
-    margin-right: 5px;
-    color: purple;
-
+.main-div-texts {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
 }
-legend{
-    font-size: 18px;
-    color: #fff;
-
-    font-weight: 400;
+.main-div-texts .primary-text {
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
-.main-div-texts{
-    display: flex;
-    position: relative;
-    justify-content: space-between;
+#cv-btn {
+  background: purple;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
 }
-.main-div-texts .primary-text{
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.main-div-texts .secondary-text {
+  position: absolute;
+  text-align-last: right;
+  bottom: 0;
+  right: 0;
 }
-#cv-btn{
-    background: purple;
-    color:#fff;
-    font-size: 17px;
-    border-radius:10px;
-    padding: 10px;
-    margin-top: 15px;
-    border:none;
-    
+.secondary-text legend {
+  font-size: 20px;
 }
-.main-div-texts .secondary-text{
-    position: absolute;
-    text-align-last: right;
-    bottom: 0;
-    right: 0;
+.main-div img {
+  width: 100%;
+  margin-top: 30px;
+  height: 70vh;
+  object-fit: contain;
 }
-.secondary-text legend{
-    font-size: 20px;
+.about-dev {
+  padding: 10px 0;
+  margin-right: auto;
+  font-size: 1.5em;
+  width: 100%;
+  text-align: center;
 }
-.main-div img{
-    width: 100%;
-    margin-top:30px;
-    height: 70vh;
-    object-fit: contain;
+.about-dev:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-.about-dev{
-    padding: 10px 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-right: auto;
-    font-size: 1.5em;
-    width: 100%;
-    text-align: center;
+.dev-achivements {
+  padding: 10px;
+  float: left;
+  width: 25%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
 }
-.about-dev:after{
-    content: "";
-    display: table;
-    clear: both;
+.dev-achivements legend {
+  text-transform: capitalize;
+  line-height: 18px;
 }
-.dev-achivements{
-    padding: 10px;
-    float: left;
-    width: 25%;
-    margin-top:15px ;
-    margin-bottom:15px ;
-    border-radius: 10px;
-}
-.dev-achivements legend{
-    text-transform: capitalize;
-    line-height: 18px;
-    /* color: purple; */
-}
-.dev-achivements h1{
-    color: purple;
+.dev-achivements h1 {
+  color: purple;
+  font-family: 'Afacad';
 }
 /* end of first section */
 
-
 /* start of second section */
-.client-testimony{
-    background-color: #131212;  
-    color: #fff;
-    height: 55vh;
-    padding: 0;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+.client-testimony {
+  background-color: #131212;
+  color: #fff;
+  height: 55vh;
+  padding: 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
-.client-text{
-    padding: 20px 20px 20px 20px;
-    font-size: 1.5em;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.client-text {
+  padding: 20px 20px 20px 20px;
+  font-size: 1.5em;
 }
-.client-text p{
-    font-size: 28px;
-    font-weight: 700;
+.client-text p {
+  font-size: 28px;
+  font-weight: 700;
 }
-.client-text legend{
-    color: #fff;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    text-transform: capitalize;
+.client-text legend {
+  color: #fff;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-transform: capitalize;
 }
-.client-testimony img{
-    height: 170px;
-    width: 170px;
-    border-radius: 50%;
-    margin: 20px ;
-    object-fit: cover;
+.client-testimony img {
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  margin: 20px;
+  object-fit: cover;
 }
-.dark-header{
-    font-style: italic;
-    font-size: 17px;
-    color: rgb(197, 193, 193);
+.dark-header {
+  font-style: italic;
+  font-size: 17px;
+  color: rgb(197, 193, 193);
 }
 /* end of second section */
 
-
 /* start of third section */
-.my-services{
-    padding: 20px 20px 20px 20px;
-    font-size: 1.5em;
-    align-items: center;
-    display: flex;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    justify-content: space-between;
+.my-services {
+  padding: 20px 20px 20px 20px;
+  font-size: 1.5em;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
-.my-service{
-    padding: 20px 20px 20px 20px;
+.my-service {
+  padding: 20px 20px 20px 20px;
 }
-.light-header{
-    font-style: italic;
-    font-size: 17px;
-    color: #fff;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.light-header {
+  font-style: italic;
+  font-size: 17px;
+  color: #fff;
 }
-.service{
-    display: flex;
-    justify-content: space-between;
+.service {
+  display: flex;
+  justify-content: space-between;
 }
-.service img{
-    height: 30px;
-    background: #000;
-    width: 30px;
-    border-radius: 50%;
+.service img {
+  height: 30px;
+  background: #000;
+  width: 30px;
+  border-radius: 50%;
 }
-.service h4{
-    align-items: center;
-    text-transform: uppercase;
-    font-weight: bolder;
-    padding-left: 10px;
-    color: purple;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.service h4 {
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding-left: 10px;
+  color: purple;
 }
-.fa-desktop{
-    font-size: 30px;
-    color: #fff;
-
-    
+.fa-desktop {
+  font-size: 30px;
+  color: #fff;
 }
-.fa-palette{
-    font-size: 30px;
-    color: #fff;
-
-    
-}             
-.fa-gear{
-    font-size: 30px;
-    color: #fff;
-
-    
+.fa-palette {
+  font-size: 30px;
+  color: #fff;
 }
-hr{
-    border: 0.1px solid #000;
-    margin:20px 20px 40px 20px;
+.fa-gear {
+  font-size: 30px;
+  color: #fff;
+}
+hr {
+  border: 0.1px solid #000;
+  margin: 20px 20px 40px 20px;
 }
 
 /* my work start */
-.my-works:after{
-    content: "";
-    display: table;
-    clear: both;
+.my-works:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-.work img{
-    height: 40vh;
-    width: 100%;
-    object-fit: cover;
+.work img {
+  height: 40vh;
+  width: 100%;
+  object-fit: cover;
 }
-.work{
-    padding: 12px;
-    
-    position: relative;
-    float: left;
-    width: 40%;
-    margin-left: 6.5%;
-    box-shadow: 2px 2px 2px 2px  rgb(46, 45, 45);
-    margin-top:15px ;
-    margin-bottom:35px ;
-    border-radius: 10px;
+.work {
+  padding: 12px;
+
+  position: relative;
+  float: left;
+  width: 40%;
+  margin-left: 6.5%;
+  box-shadow: 2px 2px 2px 2px rgb(46, 45, 45);
+  margin-top: 15px;
+  margin-bottom: 35px;
+  border-radius: 10px;
 }
-.work h2{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: lighter;
-    font-size: 20px;
+.work h2 {
+  font-weight: lighter;
+  font-size: 20px;
 }
-.work h3{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bolder;
-    font-size: 22px;
+.work h3 {
+  font-weight: bolder;
+  font-size: 22px;
 }
 
-.veiw{
-    background-color: #fff;
-    position: absolute;
-    border: none;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    top: 0;
-    cursor: pointer;
-    box-shadow: 2px 2px 2px  rgb(46, 45, 45);
+.veiw {
+  background-color: #fff;
+  position: absolute;
+  border: none;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px rgb(46, 45, 45);
 }
-#github-link{
-    position: relative;
-    padding-top: 20px;
-    background-color: transparent;
-    cursor: pointer;
-    bottom: 0;
-    border: none;
+#github-link {
+  position: relative;
+  padding-top: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  bottom: 0;
+  border: none;
 }
-.fa-github{
-    color: #fff;
-
+.fa-github {
+  color: #fff;
 }
 /* my work end */
 
 /* end of third section */
 
-
 /* start of fourth section */
-.contact{
-    padding: 30px 20px;
-    margin: 0 -20px;
-    color: #fff;
-    background-color: #131212;  
-    display: flex;
-    justify-content: space-between;
+.contact {
+  padding: 30px 20px;
+  margin: 0 -20px;
+  color: #fff;
+  background-color: #131212;
+  display: flex;
+  justify-content: space-between;
 }
-.contact .dark-header{
-    margin-bottom: 10px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.contact .dark-header {
+  margin-bottom: 10px;
 }
-.contact .contact-input{
-    width: 100%;
+.contact .contact-input {
+  width: 100%;
 }
-.contact-input input{
-    background: none;
-    color: #fff;
-    height: 40px;
-    border: none;
-    padding-left: 10px;
-    border-bottom:1px solid rgb(88, 87, 
-    87) ;
-    outline: none;
-    width: 90%;
-    margin: 15px 0;
+.contact-input input {
+  background: none;
+  color: #fff;
+  height: 40px;
+  border: none;
+  padding-left: 10px;
+  border-bottom: 1px solid rgb(88, 87, 87);
+  outline: none;
+  width: 90%;
+  margin: 15px 0;
 }
-.contact-input textarea{
-    background: none;
-    outline: none;
-    width: 90%;
-    border: none;
-    color: #fff;
-    padding-left: 10px;
-    font-size: 17px;
-    padding-top: 10px;
-    margin-top:20px;
-    border-bottom:1px solid rgb(88, 87, 
-    87) ; 
+.contact-input textarea {
+  background: none;
+  outline: none;
+  width: 90%;
+  border: none;
+  color: #fff;
+  padding-left: 10px;
+  font-size: 17px;
+  padding-top: 10px;
+  margin-top: 20px;
+  border-bottom: 1px solid rgb(88, 87, 87);
 }
-textarea::placeholder { 
-   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-   font-size: 15px;
+textarea::placeholder {
+  font-size: 15px;
 }
-#send-btn{
-   background: purple;
-   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-   font-size: 17px;
-   color: #fff;
-   font-weight: 500;
+#send-btn {
+  background: purple;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 500;
 }
-select{
-    width: 90%;
-    background: none;
-    margin-top:20px;
-    border: none;
-    border-bottom:1px solid rgb(88, 87, 
-    87) ;
+select {
+  width: 90%;
+  background: none;
+  margin-top: 20px;
+  border: none;
+  border-bottom: 1px solid rgb(88, 87, 87);
 }
-.contact-text{
-    width: 100%;
-    position:relative;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    /* display: none; */
+.contact-text {
+  width: 100%;
+  position: relative;
+  /* display: none; */
 }
-.contact-text h3{
-    font-size: 17px;
+.contact-text h3 {
+  font-size: 17px;
 }
-.contact-text h2{
-    font-size: 28px;
-    letter-spacing: 2px;
+.contact-text h2 {
+  font-size: 28px;
+  letter-spacing: 2px;
 }
-.contact-text h4{
-    font-size: 22px;
+.contact-text h4 {
+  font-size: 22px;
 }
-.social-media{
-    position: absolute;
-    bottom: 0px;
+.social-media {
+  position: absolute;
+  bottom: 0px;
 }
-.social-media .icons{
-    margin: 10px 0 0 0;
+.social-media .icons {
+  margin: 10px 0 0 0;
 }
-.social-media .icons a{
-    color: #fff;
-    text-decoration: none;
+.social-media .icons a {
+  color: #fff;
+  text-decoration: none;
 }
-.fa-facebook{
-    font-size: 30px;
+.fa-facebook {
+  font-size: 30px;
 }
-.fa-github{
-    font-size: 30px;
-    margin-left: 20px;
+.fa-github {
+  font-size: 30px;
+  margin-left: 20px;
 }
-.fa-whatsapp{
-    font-size: 30px;
-    margin-left: 20px;
+.fa-whatsapp {
+  font-size: 30px;
+  margin-left: 20px;
+}
+.fa-envelope {
+  font-size: 30px;
+  margin-left: 20px;
+}
+.fa-linkedin {
+  font-size: 30px;
+  margin-left: 20px;
 }
 /* end of fourth section */
 
-
 /* start of fifth section */
-.footer{
-    padding:  0;
-    margin: -20px -20px -20px;
-    box-sizing: border-box;
-    background-color: #131212;  
-    border-top: 1px solid rgb(88, 87, 87);
-    padding: 10px 0;
-    text-align: center;
+.footer {
+  padding: 0;
+  margin: -20px -20px -20px;
+  box-sizing: border-box;
+  background-color: #131212;
+  border-top: 1px solid rgb(88, 87, 87);
+  padding: 10px 0;
+  text-align: center;
 }
-.footer legend{
-    padding:15px  0;
-    font-size: 14px;
-    color: rgb(197, 193, 193);
-    text-transform: capitalize;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.footer legend {
+  padding: 15px 0;
+  font-size: 14px;
+  color: rgb(197, 193, 193);
+  text-transform: capitalize;
 }
 
 /* end of fifth section */
 
-
-
-
-
 /* mobile veiw start */
 
-@media only screen and (max-width:600px){
-    .nav-bar .fa-bars{
-        display: block;
-        color: #fff;
-        font-size: 35px;
-    }
-    #opn-btn{
-        display:block;
-        border: none;
-        background-color: transparent;
-    }
-    .nav-links .fa-xmark{
-        display: block;
-        position: absolute;
-        top: 5px;
-        color:#fff;
-        font-size: 40px;
-        right: 20px;
-        font-size: 35px;
-    }
-    #x-btn{
-        display:block;
-        border: none;
-        background-color: transparent;
-    }
-   .nav-links{
+@media only screen and (max-width: 600px) {
+  .nav-bar .fa-bars {
+    display: block;
+    color: #fff;
+    font-size: 35px;
+  }
+  #opn-btn {
+    display: block;
+    border: none;
+    background-color: transparent;
+  }
+  .nav-links .fa-xmark {
+    display: block;
+    position: absolute;
+    top: 5px;
+    color: #fff;
+    font-size: 40px;
+    right: 20px;
+    font-size: 35px;
+  }
+  #x-btn {
+    display: block;
+    border: none;
+    background-color: transparent;
+  }
+  .nav-links {
     display: flex;
     width: 200px;
     position: fixed;
@@ -479,113 +450,111 @@ select{
     height: 35vh;
     overflow: auto;
     z-index: 2;
-    background:black;
+    background: black;
     padding: 20px 0;
     text-align: center;
     line-height: 55px;
     flex-direction: column;
-   }
-   .nav-links li a{
-    color:#fff;
-   }
-   #special-nav-btn {
-        border: none;
-    }
-    #special-nav-btn li{    
-        color:#fff;
-    }
-    .main-div{
-        padding: 0 20px; 
-        display: flex;
-        flex-direction: column
-    }
-    .main-div-texts{
-        display: flex;
-        flex-direction: column
-    }
-    .main-div-texts .primary-text{
-        text-align: center;
-        line-height: 30px;
-    }
-    .main-div-texts .secondary-text{
-        text-align: center;
-        margin-top: 20px;
-        position: relative;
-        text-align-last: center;  
-    } 
-    .main-div img{
-        height: 350px;
-    }
-    .my-services{
-        display: flex;
-        flex-direction: column;
-    }
-    .service{
-        text-align: center;
-        display: flex;
-        margin: 40px 0;
-        flex-direction: column
-    }
-    .service h4{
-        margin-top: 15px;
-    }
-    .client-testimony{
-        height: 50%;
-        position: relative;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .client-testimony h3{
-        position: absolute;
-        top: 15px;
-    }
-    .client-testimony img{
-        margin: 50px 0 0 0;
-    }
-    .dev-achivements{
-        padding: 10px;
-        float: left;
-        width: 35%;
-        margin-left: 10%;
-        margin-top:15px ;
-        margin-bottom:15px ;
-        border-radius: 10px;
-    }
-    .client-text{
-        margin:0 ;
-        text-align: center;
-    }
-    .contact{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    .contact-text{
-        line-height: 38px;
-    }
-    .contact-text h2{
-        font-size: 25px;
-    }
-    .work{
-        width: 100%;
-        margin-left: 1%;
-    }
-    .social-media{
-        position: relative;
-    }
-    .contact-input h3{
+  }
+  .nav-links li a {
+    color: #fff;
+  }
+  #special-nav-btn {
+    border: none;
+  }
+  #special-nav-btn li {
+    color: #fff;
+  }
+  .main-div {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-div-texts {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-div-texts .primary-text {
+    text-align: center;
+    line-height: 30px;
+  }
+  .main-div-texts .secondary-text {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    text-align-last: center;
+  }
+  .main-div img {
+    height: 350px;
+  }
+  .my-services {
+    display: flex;
+    flex-direction: column;
+  }
+  .service {
+    text-align: center;
+    display: flex;
+    margin: 40px 0;
+    flex-direction: column;
+  }
+  .service h4 {
+    margin-top: 15px;
+  }
+  .client-testimony {
+    height: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .client-testimony h3 {
+    position: absolute;
+    top: 15px;
+  }
+  .client-testimony img {
+    margin: 50px 0 0 0;
+  }
+  .dev-achivements {
+    padding: 10px;
+    float: left;
+    width: 35%;
+    margin-left: 10%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+  .client-text {
+    margin: 0;
+    text-align: center;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-text {
+    line-height: 38px;
+  }
+  .contact-text h2 {
+    font-size: 25px;
+  }
+  .work {
+    width: 100%;
+    margin-left: 1%;
+  }
+  .social-media {
+    position: relative;
+  }
+  .contact-input h3 {
     text-align: left;
-    }
+  }
 }
 /* mobile veiw end */
 
-
-
 /* tablet veiw start */
-@media only screen and (max-width:900px){ 
-   .main-div-texts{
-        display: block;
-        flex-direction: column;
-   }
+@media only screen and (max-width: 900px) {
+  .main-div-texts {
+    display: block;
+    flex-direction: column;
+  }
 }
 /* tablet veiw end */
