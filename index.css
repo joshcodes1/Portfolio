@@ -41,10 +41,10 @@
   margin: 0 20px;
   color: white;
 }
-a .fa-bars {
+a .fa-chevron-right {
   display: none;
 }
-a .fa-xmark {
+a .fa-chevron-left {
   display: none;
 }
 #opn-btn {
@@ -347,6 +347,10 @@ hr {
   font-size: 30px;
   margin-left: 20px;
 }
+/* .fa-chevron-right{
+  font-size: 30px;
+  margin-left: 20px;
+} */
 /* end of fourth section */
 
 /* start of fifth section */
@@ -371,7 +375,7 @@ hr {
 /* mobile veiw start */
 
 @media only screen and (max-width: 600px) {
-  .nav-bar .fa-bars {
+  .nav-bar .fa-chevron-left{
     display: block;
     color: #fff;
     font-size: 35px;
@@ -381,13 +385,13 @@ hr {
     border: none;
     background-color: transparent;
   }
-  .nav-links .fa-xmark {
+  .nav-links .fa-chevron-right {
     display: block;
     position: absolute;
-    top: 5px;
+    top: 10px;
     color: #fff;
     font-size: 40px;
-    right: 20px;
+    left: 10px;
     font-size: 35px;
   }
   #x-btn {
@@ -401,23 +405,20 @@ hr {
     position: fixed;
     right: -200px;
     top: 0;
-    height: 35vh;
+    height: 19vh;
+    transition: ease-in-out 0.5s;
     overflow: auto;
     z-index: 2;
     background: black;
-    padding: 20px 0;
     text-align: center;
-    line-height: 55px;
     flex-direction: column;
   }
   .nav-links li a {
     color: #fff;
   }
-  #special-nav-btn {
-    border: none;
-  }
-  #special-nav-btn li {
-    color: #fff;
+  .nav-links li{
+  padding: 25px 0;
+
   }
   .main-div {
     padding: 0 20px;
@@ -501,7 +502,7 @@ hr {
   .contact-input h3 {
     text-align: left;
   }
-}
+ 
 /* mobile veiw end */
 
 /* tablet veiw start */
@@ -512,3 +513,4 @@ hr {
   }
 }
 /* tablet veiw end */
+}
