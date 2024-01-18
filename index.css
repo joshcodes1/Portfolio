@@ -259,7 +259,7 @@ hr {
 }
 .work {
   padding: 12px;
-
+  height: 80vh;
   position: relative;
   float: left;
   width: 40%;
