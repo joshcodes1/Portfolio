@@ -1,17 +1,56 @@
 * {
+  color: whitesmoke;
   padding: 0;
   margin: 0;
-  font-family: "Afacad";
   box-sizing: border-box;
+  font-family: "Montserrat";
 }
-.container {
+.container{
+  width: 100%;
+  height: 100vh;
+  background: #161A3D;
+  padding: 20px 100px;
+}
+.nav-bar{
+  margin-bottom:70px ;
+  display: flex;
+  justify-content: space-between;
+}
+.logo span{
+  color: #E05555;
+}
+.nav-links{
+  display: flex;
+}
+.nav-links li{
+  list-style-type: none;
+}
+  .nav-links li a{
+  padding: 20px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+
+
+
+.about-me{
+  height: 50vh;
+  width: 50%;
+}
+.about-me button{
+  background-color: #E05555;
+  border: none;
+  padding: 10px;
+}
+/* .container {
   background-color: #131212;
   color: #fff;
 }
 
 /* start of first section */
 
-.nav-bar {
+/* .nav-bar {
   padding: 20px 20px 0 20px;
   justify-content: space-between;
   display: flex;
@@ -112,8 +151,8 @@ legend {
   border: 2px solid purple;
   margin-top: 15px;
   /* border: none; */
-}
-.main-div-texts .secondary-text {
+
+/* .main-div-texts .secondary-text {
   position: absolute;
   text-align-last: right;
   bottom: 0;
@@ -159,7 +198,7 @@ legend {
 /* end of first section */
 
 /* start of second section */
-.client-testimony {
+/* .client-testimony {
   background-color: #131212;
   color: #fff;
   height: 55vh;
@@ -188,12 +227,12 @@ legend {
   border-radius: 50%;
   margin: 20px;
   object-fit: cover;
-}
+} */
 .dark-header {
   font-style: italic;
   font-size: 17px;
   color: rgb(197, 193, 193);
-}
+} 
 /* end of second section */
 
 /* start of third section */
@@ -268,7 +307,7 @@ hr {
   margin-top: 15px;
   margin-bottom: 35px;
   border-radius: 10px;
-}
+} */
 .work h2 {
   font-weight: lighter;
   font-size: 20px;
@@ -517,4 +556,4 @@ hr {
   }
 }
 /* tablet veiw end */
-}
+} */
