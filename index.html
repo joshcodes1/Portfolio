@@ -3,23 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="index.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-div">
       <div class="nav-bar">
         <div class="logo">
           <h3>CODE<span>JOSH</span></h3>
         </div>
         <div class="nav-links">
-          <li><a  class="active" href="./index.html">Home</a></li>
+          <li><a class="active" href="./index.html">Home</a></li>
           <li><a href="">About Me</a></li>
           <li><a href="">Services</a></li>
           <li><a href="">Projects</a></li>
@@ -32,19 +36,19 @@
           <h1>Hello, I'm <br />a Frontend Devloper</h1>
           <br /><br />
           <h5>
-            Hello I'm Joshua Ihimire a Frontend website developer with 3 years
-            experience in the frontend space. Let's dive right into my skills and
-            completed projects........
+            Hello I'm <em>Joshua Ihimire </em>a Frontend developer with 3 years
+            experience in the frontend space. Let's dive right into my skills
+            and completed projects........
           </h5>
         </div>
         <br />
-        <button>Download CV</button>
+        <button>Download CV <i class="bi bi-download"></i></button>
       </div>
 
       <!-- begining of skill-->
       <div class="services">
         <h4>Service</h4>
-        <h1>Skill-Set</h1>
+        <h2 class="header">Skill-Set</h2>
         <div class="skill-set">
           <div class="skill"></div>
           <div class="skill"></div>
@@ -56,6 +60,17 @@
       <div class="projects"></div>
 
       <div class="contact"></div>
+
+      <div class="connect-with-me">
+        <h2 class="header">Connect with me</h2>
+        <br />
+        <div class="connect-input">
+          <input placeholder="Email" type="email" />
+          <input placeholder="Message" type="text" />
+          <br />
+          <button>Stay Connected <i class="bi bi-globe"></i></button>
+        </div>
+      </div>
     </div>
   </body>
 </html>

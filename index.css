@@ -5,32 +5,37 @@
   box-sizing: border-box;
   font-family: "Montserrat";
 }
-.container{
+.container-div {
   width: 100%;
-  height: 100vh;
-  background: #161A3D;
+  height: 100%;
+  background: #161a3d;
   padding: 20px 100px;
 }
-.nav-bar{
-  margin-bottom:70px ;
+.header {
+  color: #e05555;
+}
+/* Begining of nav-bar*/
+
+.nav-bar {
+  margin-bottom: 70px;
   display: flex;
   justify-content: space-between;
 }
-.logo span{
-  color: #E05555;
+.logo span {
+  color: #e05555;
 }
-.nav-links{
+.nav-links {
   display: flex;
 }
-.nav-links li{
+.nav-links li {
   list-style-type: none;
 }
-  .nav-links li a{
+.nav-links li a {
   padding: 20px;
   color: whitesmoke;
   text-decoration: none;
 }
-.nav-links.active::after{
+.active::after {
   content: "";
   position: absolute;
   bottom: -14px;
@@ -39,21 +44,63 @@
   width: 100%;
   background-color: green;
 }
+/* Ending of nav-bar*/
 
 
-
-
-.about-me{
+/* Begining of about me */
+.about-me {
   height: 50vh;
   width: 50%;
-  margin-bottom:70px ;
+  margin-bottom: 70px;
 }
-.info-about-me h5{
+.info-about-me h5 {
   line-height: 30px;
   font-weight: 400;
 }
-.about-me button{
-  background-color: #E05555;
+.info-about-me h5 em {
+  color: #e05555;
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+.about-me button {
+  background-color: #e05555;
   border: none;
   padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
+/* Ending of about me */
+
+/* Begining-Connect-section*/
+.connect-with-me {
+  width: 100%;
+}
+.connect-input {
+  width: 50%;
+}
+.connect-input input {
+  height: 40px;
+  width: 70%;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  background-color: #282b4d;
+  border: none;
+  border-radius: 5px;
+}
+.connect-input input::placeholder {
+  color: #fff;
+  opacity: 0.4;
+  font-weight: bolder;
+}
+.connect-input button {
+  background-color: #e05555;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+.bi-globe,
+.bi-download {
+  margin-left: 10px;
+}
+/* Ending-Connect-section*/
