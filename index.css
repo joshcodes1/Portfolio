@@ -35,25 +35,18 @@
   color: whitesmoke;
   text-decoration: none;
 }
-.active::after {
-  content: "";
-  position: absolute;
-  bottom: -14px;
-  right: 0px;
-  height: 4px;
-  width: 100%;
-  background-color: green;
-}
 /* Ending of nav-bar*/
-
 
 /* Begining of about me */
 .about-me {
+  display: flex;
+  justify-content: space-around;
   height: 50vh;
-  width: 50%;
+  width: 100%;
   margin-bottom: 70px;
 }
 .info-about-me h5 {
+  width: 50%;
   line-height: 30px;
   font-weight: 400;
 }
@@ -69,18 +62,51 @@
   border-radius: 5px;
   cursor: pointer;
 }
+.lines {
+  margin-left: 40px;
+  margin-top: 6px;
+  .dot {
+    width: 14px;
+    height: 14px;
+    background: transparent;
+    border: 2px solid #e05555;
+    border-radius: 7px;
+  }
+  #special-dot {
+    background: #e05555;
+  }
+  .line {
+    height: 50px;
+    width: 2px;
+    background: #d1d6e6;
+    margin-left: 5.3px;
+  }
+}
 /* Ending of about me */
+
+.skill-set {
+  display: grid;
+  grid-template-columns: (4, 1fr);
+  gap: 1rem;
+}
+.skill {
+}
 
 /* Begining-Connect-section*/
 .connect-with-me {
   width: 100%;
 }
+.main-connect {
+  display: flex;
+  justify-content: space-around;
+}
 .connect-input {
-  width: 50%;
+  width: 100%;
 }
 .connect-input input {
+  display: block;
   height: 40px;
-  width: 70%;
+  width: 40%;
   padding-left: 20px;
   margin-bottom: 20px;
   background-color: #282b4d;
